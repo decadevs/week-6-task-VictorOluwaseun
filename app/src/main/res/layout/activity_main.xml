@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorParentBackground"
+    android:id="@+id/main"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/colorLight"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+
+        android:layout_width="54dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_baseline_account_box_24"
+        app:layout_constraintBottom_toBottomOf="@+id/etName"
+        app:layout_constraintEnd_toStartOf="@+id/etName"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:drawableStart="@drawable/ic_baseline_account_box_24"
+        android:drawableLeft="@drawable/ic_baseline_account_box_24"
+        android:drawablePadding="7dp"
+        android:drawableTintMode="add"
+        android:layout_width="258dp"
+        android:layout_height="47dp"
+        android:layout_margin="15dp"
+        android:background="@color/colorLight"
+        android:hint="Name"
+        android:outlineSpotShadowColor="@color/colorLight"
+        android:padding="10dp"
+        android:shadowColor="@color/colorLight"
+        android:textColorHighlight="@color/colorLight"
+        app:layout_constraintEnd_toEndOf="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <EditText
+        android:id="@+id/etPhoneNum"
+        android:layout_width="258dp"
+        android:layout_height="47dp"
+        android:layout_margin="15dp"
+        android:background="@color/colorLight"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:outlineSpotShadowColor="@color/colorLight"
+        android:padding="10dp"
+        android:shadowColor="@color/colorLight"
+        android:textColorHighlight="@color/colorLight"
+        app:layout_constraintEnd_toEndOf="@+id/etName"
+        app:layout_constraintStart_toStartOf="@+id/etName"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="258dp"
+        android:layout_height="47dp"
+        android:layout_margin="15dp"
+        android:background="@color/colorLight"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:outlineSpotShadowColor="@color/colorLight"
+        android:padding="10dp"
+        android:shadowColor="@color/colorLight"
+        android:textColorHighlight="@color/colorLight"
+        app:layout_constraintEnd_toEndOf="@+id/etPhoneNum"
+        app:layout_constraintStart_toStartOf="@+id/etPhoneNum"
+        app:layout_constraintTop_toBottomOf="@+id/etPhoneNum" />
+
+    <Spinner
+        android:id="@+id/spGender"
+        android:layout_width="266dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/gender"
+        android:theme="@style/forSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/etEmail"
+        app:layout_constraintStart_toStartOf="@+id/etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/btnRegister"
+        app:layout_constraintStart_toStartOf="@+id/spGender"
+        app:layout_constraintTop_toBottomOf="@+id/spGender" />
+</androidx.constraintlayout.widget.ConstraintLayout>
