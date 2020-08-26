@@ -17,7 +17,7 @@ class ProfileActivity : AppCompatActivity() {
         tvProfileName.text = name
         tvProfileEmail.text = email
         tvProfilePhoneNo.text = phoneNo
-        tvGender.text = gender
+        tvProfileGender.text = gender
 
         btnBack.setOnClickListener{
             finish()
