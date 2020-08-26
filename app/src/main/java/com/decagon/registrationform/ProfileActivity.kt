@@ -19,5 +19,9 @@ class ProfileActivity : AppCompatActivity() {
         tvProfilePhoneNo.text = phoneNo
         tvGender.text = gender
 
+        btnBack.setOnClickListener{
+            finish()
+        }
+
     }
 }
