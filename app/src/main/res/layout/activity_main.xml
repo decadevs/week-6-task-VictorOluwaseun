@@ -9,6 +9,7 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
+<!--  Text View for the Title  -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
@@ -21,22 +22,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-
-        android:layout_width="54dp"
-        android:layout_height="70dp"
-        android:src="@drawable/ic_baseline_account_box_24"
-        app:layout_constraintBottom_toBottomOf="@+id/etName"
-        app:layout_constraintEnd_toStartOf="@+id/etName"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
-        app:layout_constraintVertical_bias="0.0" />
+<!--    For Name-->
 
     <EditText
         android:id="@+id/etName"
-        android:drawableStart="@drawable/ic_baseline_account_box_24"
-        android:drawableLeft="@drawable/ic_baseline_account_box_24"
         android:drawablePadding="7dp"
-        android:drawableTintMode="add"
         android:layout_width="258dp"
         android:layout_height="47dp"
         android:layout_margin="15dp"
@@ -49,6 +39,8 @@
         app:layout_constraintEnd_toEndOf="@+id/tvTitle"
         app:layout_constraintStart_toStartOf="@+id/tvTitle"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+<!--    For Phone Number-->
 
     <EditText
         android:id="@+id/etPhoneNum"
@@ -66,6 +58,8 @@
         app:layout_constraintStart_toStartOf="@+id/etName"
         app:layout_constraintTop_toBottomOf="@+id/etName" />
 
+<!--    For Email-->
+
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="258dp"
@@ -82,23 +76,30 @@
         app:layout_constraintStart_toStartOf="@+id/etPhoneNum"
         app:layout_constraintTop_toBottomOf="@+id/etPhoneNum" />
 
+<!-- For Drop down-->
+
     <Spinner
         android:id="@+id/spGender"
-        android:layout_width="266dp"
-        android:layout_height="45dp"
+        android:theme="@style/SpinnerCustomStyle"
         android:layout_marginTop="20dp"
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
         android:entries="@array/gender"
-        android:theme="@style/forSpinner"
         app:layout_constraintEnd_toEndOf="@+id/etEmail"
         app:layout_constraintStart_toStartOf="@+id/etEmail"
         app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
+<!--Register Button-->
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:text="@string/btnRegister"
-        app:layout_constraintStart_toStartOf="@+id/spGender"
-        app:layout_constraintTop_toBottomOf="@+id/spGender" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spGender"
+        app:layout_constraintVertical_bias="0.241" />
 </androidx.constraintlayout.widget.ConstraintLayout>

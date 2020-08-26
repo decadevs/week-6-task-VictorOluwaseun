@@ -7,8 +7,19 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="forSpinner">
-        <item name="android:textColor">@color/colorLight</item>
-        <item name="android:colorBackground">@color/colorLight</item>
-    </style>
+<!--    <style name="forSpinner" parent="Widget.AppCompat.Spinner.Underlined">-->
+<!--        <item name="android:textColor">@color/colorLight</item>-->
+<!--        <item name="android:colorBackground">@color/colorParentBackground</item>-->
+
+<!--        <style name="SpinnerCustomStyle" parent="Widget.AppCompat.Spinner.Underlined">-->
+    <style name="SpinnerCustomStyle">
+
+    <item name="android:textSize">13sp</item>
+            <item name="android:textColorHint">#fff</item>
+<!--            <item name="android:layout_marginStart">@dimen/_20sdp</item>-->
+<!--            <item name="android:layout_marginEnd">@dimen/_20sdp</item>-->
+            <item name="backgroundTint">@color/colorParentBackground</item>
+            <item name="android:layout_gravity">center</item>
+        </style>
+<!--    </style>-->
 </resources>
