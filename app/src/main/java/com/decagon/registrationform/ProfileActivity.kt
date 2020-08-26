@@ -12,10 +12,12 @@ class ProfileActivity : AppCompatActivity() {
         val name = intent.getStringExtra("EXTRA_NAME")
         val email = intent.getStringExtra("EXTRA_EMAIL")
         val phoneNo = intent.getStringExtra("EXTRA_PHONE_NUMBER")
+        val gender = intent.getStringExtra("EXTRA_GENDER")
 
         tvProfileName.text = name
         tvProfileEmail.text = email
         tvProfilePhoneNo.text = phoneNo
+        tvGender.text = gender
 
     }
 }
