@@ -113,3 +113,5 @@ class PhoneNumberValidation {
 
             return message
         }
+    }
+}
